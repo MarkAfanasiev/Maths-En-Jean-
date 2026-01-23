@@ -27,7 +27,7 @@ def lancer_conjecture():
     while len(suite_actuelle) > 0:
         ligne_str = formater_ligne(suite_actuelle)
         padding = " " * iteration
-        print(f"{padding}Ligne {iteration}: {ligne_str}")
+        print(f"{padding}{ligne_str}")
         premiers_elements.append(suite_actuelle[0])
         suite_actuelle = calculer_differences(suite_actuelle)
         iteration += 1
